@@ -1,0 +1,70 @@
+#root {
+	background-color: lightblue;
+	margin: auto;
+	padding: 10px;
+	margin-top: 20px;
+	min-width: 40%;
+	max-width: 40%;
+	max-height: 90em;
+	border-radius: 4px;
+	box-shadow: 3px 3px 10px #888888
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.StreamHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.FilterBar {
+	display: flex;
+	justify-content: space-around;
+}
+
+.newStreamButton {
+	margin-right: 5px;
+	border: solid black 2px;
+	max-height: 2em;
+}
+
+.FilterBar div {
+	cursor: pointer;
+}
+
+.FilterBar div p {
+	background-color: #e0ded0;
+	padding: 5px;
+	border: 2px darkblue solid;
+}
+
+.Streams {
+	list-style-type: none;
+}
+
+.streamDisplay {
+	background-color: #bdf;
+	padding: 7px 0px;
+	overflow: auto;
+}
+
+.streamItem {
+	display: flex;
+	justify-content: space-between;
+}
+
+.streamInfo {
+	cursor: pointer;
+}
+
+.streamRemoveButton {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5%;
+}
