@@ -10,6 +10,7 @@ import {Provider} from 'react-redux';
 
 const initialState = {
 	filter: Filters.ALL,
+	streamBeingAdded: false,
 	streams: [
 		{
 			id: 1,

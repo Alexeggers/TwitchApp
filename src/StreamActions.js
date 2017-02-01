@@ -6,6 +6,8 @@ const channelsExtension = 'channels/';
 
 export const actionTypes = {
 	ADD_STREAM: "ADD_STREAM",
+	FINISH_ADD_STREAM: "FINISH_ADD_STREAM",
+	CANCEL_ADD_STREAM: "CANCEL_ADD_STREAM",
 	REMOVE_STREAM: "REMOVE_STREAM",
 	FILTER_STREAMS: "FILTER_STREAMS",
 	REQUEST_STREAM_SUCCESS: "REQUEST_STREAM_SUCCESS",
@@ -80,6 +82,14 @@ export function fetchChannel(channelName) {
 
 export function addStream(streamName) {
 	return {type: actionTypes.ADD_STREAM, name: streamName}
+}
+
+export function finishAddingStream(streamName) {
+	return {type: actionTypes.FINISH_ADD_STREAM, name: streamName}
+}
+
+export function cancelAddingStream() {
+	return {type: actionTypes.CANCEL_ADD_STREAM}
 }
 
 export function removeStream(streamID) {

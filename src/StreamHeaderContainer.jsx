@@ -4,8 +4,8 @@ import {addStream} from './StreamActions';
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		newStream: () => {
-			dispatch(addStream("AnotherTest"))
+		newStream: (name) => {
+			dispatch(addStream(name))
 		}
 	}
 }
