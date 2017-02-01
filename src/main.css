@@ -16,11 +16,6 @@ body {
 	align-items: flex-start;
 }
 
-.StreamHeader {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 .FilterBar {
 	display: flex;
