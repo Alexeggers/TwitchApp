@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import css from './StreamHeader.css';
+import './StreamHeader.css';
 
 export default class StreamHeader extends Component {
 
@@ -13,14 +13,16 @@ export default class StreamHeader extends Component {
 		const {showForm, name} = this.state;
 		return (
 			<div className="StreamHeader">
+				<button className="refreshButton" onClick={this.props.refreshStreams}><img role="presentation" src="./icon-refresh-128.png" /></button>	
 				<header>
 					<button className="newStreamButton" onClick={this.showForm}>+</button>
 					<h2>Twitch streams</h2>
 				</header>
+
 				{showForm && (
 					<form onSubmit={this.handleSubmit}>
-						<button type='button' onClick={this.hideForm}>close</button>
 						<input name='name' type='text' value={name} onChange={this.handleInput} />
+						<button type='button' onClick={this.hideForm}>close</button>
 						<button>send</button>
 					</form>
 				)}

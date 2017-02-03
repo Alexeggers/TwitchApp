@@ -1,5 +1,24 @@
-.StreamHeader header {
+.StreamHeader, .StreamHeader header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.StreamHeader {
+	flex-direction: column;
+}
+
+button, .FilterBar div p {
+	background-color: white;
+	border: solid black 2px;
+}
+
+.refreshButton {
+	min-height: 2em;
+	margin-left: auto;
+}
+
+.refreshButton img {
+	height: 20px;
+	width: 20px;
 }

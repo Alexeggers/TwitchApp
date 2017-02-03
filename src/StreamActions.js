@@ -50,6 +50,14 @@ export function fetchStream(streamName) {
 	}
 }
 
+export function refreshAllStreams() {
+	return function(dispatch, getState) {
+		const streams = getState().streams;
+		console.log(streams);
+		streams.forEach(stream => dispatch(fetchStream(stream.name)));
+	}
+}
+
 function requestChannelSuccess(streamName, stream) {
 	return {
 		type: actionTypes.REQUEST_CHANNEL_SUCCESS,

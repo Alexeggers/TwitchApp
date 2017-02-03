@@ -10,22 +10,20 @@ import {Provider} from 'react-redux';
 
 const initialState = {
 	filter: Filters.ALL,
-	streamBeingAdded: false,
 	streams: [
 		{
 			id: 1,
 			name: "ESL_SC2",
 			// eslint-disable-next-line
-			details: "Playing a gamePlaying a gamePlaying a gamePlaying a gamePlaying \
-			a gamePlaying a gamePlaying a gamePlaying a gamePlaying a gamePlaying a game",
+			details: "",
 			verified: true,
 			exists: true,
 			online: true
 		},
 		{
-			id: 2,
+			id: 4,
 			name: "day9tv",
-			details: "Something something dark side",
+			details: "",
 			verified: true,
 			exists: true,
 			online: false
